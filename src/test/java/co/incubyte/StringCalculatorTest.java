@@ -45,6 +45,12 @@ private StringCalculator calculator;
 	public void testSumReturnedForStringWithNewLine() {
 		assertEquals( 6,calculator.add("1\n2,3") );
 	}
+	
+	@Test
+	@DisplayName("A sum should be returned for numbers with custom delimiter")
+	public void testSumReturnForCustomeDelimiter() {
+		assertEquals(3, "//;\\n1;2");
+	}
 
 }
 
