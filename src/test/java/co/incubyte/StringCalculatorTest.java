@@ -27,6 +27,12 @@ private StringCalculator calculator;
 	public void testSingleNumberString() {
 		assertEquals(1, calculator.add("1"));
 	}
+	
+	@Test
+	@DisplayName("A sum should be returned for numbers delimited by comma")
+	public void testSumReturnForNumbersDelimitedByComma() {
+		assertEquals(5,calculator.add("2,3") );
+	}
 
 }
 
