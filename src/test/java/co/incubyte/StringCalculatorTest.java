@@ -33,6 +33,12 @@ private StringCalculator calculator;
 	public void testSumReturnForNumbersDelimitedByComma() {
 		assertEquals(5,calculator.add("2,3") );
 	}
+	
+	@Test
+	@DisplayName("A sum should be returned on multiple numbers")
+	public void testSumReturnForMultipleNumbers() {
+		assertEquals(6,calculator.add("1,2,3") );
+	}
 
 }
 
