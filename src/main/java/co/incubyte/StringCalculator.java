@@ -2,6 +2,12 @@ package co.incubyte;
 
 public class StringCalculator {
 	public static int add(String numbers) {
-		return -1;
+		int sum=-1;
+		
+		if(numbers.length()==0)
+			sum=0;
+		
+		return sum;
+		
 	}
 }
