@@ -22,6 +22,11 @@ private StringCalculator calculator;
         assertEquals(0, calculator.add(""));          
     }
 	
+	@Test
+	@DisplayName("A number string should return number")
+	public void testSingleNumberString() {
+		assertEquals(1, calculator.add("1"));
+	}
 
 }
 
