@@ -1,13 +1,14 @@
-package co.incubyte.tests;
+package co.incubyte;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-public class StringCalculatorTest {
-	
-	private StringCalculator calculator;
+class StringCalculatorTest {
+
+private StringCalculator calculator;
 	
 	//set up 
 	@BeforeEach                                         
@@ -21,6 +22,7 @@ public class StringCalculatorTest {
         assertEquals(0, calculator.add(""));          
     }
 	
-	
-	
+
 }
+
+
