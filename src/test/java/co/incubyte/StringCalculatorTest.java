@@ -39,6 +39,12 @@ private StringCalculator calculator;
 	public void testSumReturnForMultipleNumbers() {
 		assertEquals(6,calculator.add("1,2,3") );
 	}
+	
+	@Test
+	@DisplayName("A sum should be returned for numbers including new line")
+	public void testSumReturnedForStringWithNewLine() {
+		assertEquals( 6,calculator.add("1\n2,3") );
+	}
 
 }
 
